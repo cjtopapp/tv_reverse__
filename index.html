@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TV</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:#000;cursor:none}
+img{width:100%;height:100%;object-fit:contain;display:block}
+</style>
+</head>
+<body>
+<img src="https://pub-1d44c9b74e4842c2aaffab46d0ad62b2.r2.dev/elevator_1.png">
+<script>
+document.body.addEventListener("click",function(){
+if(document.fullscreenElement)return;
+document.documentElement.requestFullscreen().catch(function(){});
+});
+</script>
+</body>
+</html>
